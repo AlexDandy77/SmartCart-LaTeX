@@ -1,0 +1,41 @@
+\documentclass{tum_report}
+\usepackage{listings}
+\usepackage{color}
+\usepackage[labelfont=bf,textfont=bf]{caption}
+\usepackage{adjustbox}
+
+
+\usepackage[backend=biber,style=ieee,sorting=none,maxbibnames=99]{biblatex}
+%\addbibresource{references.bib}
+
+\begin{document}
+
+    \input{tex_files/title_page}
+    \clearpage
+
+    \input{tex_files/abstract} 
+    \clearpage
+    
+    \addtocontents{toc}{\protect \thispagestyle{empty}}
+    \tableofcontents
+    \thispagestyle{empty}
+    \clearpage
+
+    \input{tex_files/introduction}
+    \clearpage
+
+    \input{tex_files/midterm1}
+    \clearpage
+
+    %\input{tex_files/midterm2}
+    %\clearpage
+
+   % \input{tex_files/conclusion}
+    %\clearpage
+    
+    %\input{tex_files/bibliography}
+    %\clearpage
+    
+    %\input{tex_files/appendices}
+    %\clearpage
+\end{document}
